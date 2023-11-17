@@ -1,0 +1,282 @@
+* {
+	Margin:0;
+	padding:0;
+	box-sizing: border-box;
+ }
+ 
+@font-face{
+	font-family: Montserrat;
+	src: url(../font/Montserrat-Bold.otf);
+
+	font-family: Montserrat-light;
+	src: url(../font/Montserrat-Light.otf);
+	
+}
+
+
+.navegacion {
+    height: 80px;
+	font-family: Montserrat;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: black;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 2px;
+	
+}
+
+
+/* psudeoclase */
+
+.nav-item:hover a{
+	color: aqua;
+
+}
+
+nav ul li a {
+	letter-spacing: 4px;
+    color: white;
+	text-decoration: none; 
+	
+ }
+
+ .nav{
+	background-color: black;
+ }
+  
+  /* menu mobile */
+  #check-menu, .navegacion label{
+	display: none;
+  }
+
+  body {
+    background-color: black;
+    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    color: white;
+}
+
+.navegacion{
+	background-color: black;
+}
+.contenedor1{
+	height: 20%;
+}
+
+.fondorave1 { 
+	opacity: 30%;
+}
+
+.gente1{ 
+	opacity: 30%;
+}
+
+.contenedorrevel{
+	padding: 30px;
+	
+
+}
+
+#titulorevel{
+	letter-spacing: 30px;
+	text-align: center;
+	padding: 5%;
+	
+}
+
+#inforevel{
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 1.5;
+	padding-bottom: 60px;
+}
+
+#biorevel{
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 1.5;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 80px;
+
+}
+
+.flyers{
+	padding: 30px;
+	padding-bottom: 60px;
+	display: flex;
+}
+
+.flyer{
+	max-width: 50%; 
+	height: auto;
+}
+
+.piedepagina{
+	background-color: #080f13;
+    padding: 40px; 
+    text-align: center; 
+	text-decoration: none; 
+}
+
+.redeslogo{
+	display: inline;
+    margin: 10px;
+}
+
+.textopie{
+	font-family: Montserrat-light, Verdana;
+	padding: 30px;
+}
+
+.contenedordjs {
+	
+	background-color: #080f13 ;
+    text-align: center;
+	width: 100%; 
+    margin: auto; 
+    padding: 40px;
+
+}
+
+.contenedordjs h1{
+	letter-spacing: 30px;
+	padding: 30px;
+}
+
+.contenedordjs p{
+	letter-spacing: 2px;
+	line-height: 1.5;
+	padding: 30px;
+}
+
+
+.contenedordikron {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.contenedordikron h1{
+	letter-spacing: 30px;
+	padding: 30px;
+}
+
+.contenedorbiografia {
+
+	display: flex;
+    margin: auto; 
+	line-height: 1.5;
+	padding-top: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+.biografiatexto{
+	padding-top: 100px;
+	padding-bottom: 20px;
+
+}
+.dikronimg {
+	padding: 20px
+}
+
+.videosdikron{
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+}
+
+.contacto{
+	padding: 30px;
+	align-items: center;
+	text-align: center;
+}
+
+form {
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	width: 300px;
+}
+
+label {
+	display: block;
+	margin: 10px 0;
+}
+textarea {
+	padding: 10px;
+	margin: 8px 0;
+	border-radius: 4px;
+}
+
+/* media queries */
+
+@media (max-width: 800px){
+	.navegacion label{
+		display: flex;
+	}
+
+}
+
+/* carrusel  */
+
+#carouselExample {
+	text-align: right;
+	max-width: 400px;
+	margin: auto; 
+  }
+
+  #carouselExample img {
+	max-width: 100%;
+	height: auto; 
+  }
+
+.carruseleventos{
+	padding: 25px;
+}
+
+/*tickets  */
+
+.col-md-6-tickets{
+	text-align: center;
+	width: 300px;
+
+}
+
+.contenedor-tickets {
+	text-align: center; 
+	margin-bottom: 20px;
+}
+
+.logocentralticket {
+	width: 300px;
+	display: block; 
+	margin: 0 auto; 
+}
+
+/* titulo y parrafo para pantallas mas chicas */
+
+  @media (max-width: 567px) {
+	#titulorevel {
+		font-size: 15px; 
+		white-space: normal; 
+		letter-spacing: 15px;
+		margin-bottom: 0; 
+	  }
+	}
+	
+	@media (max-width: 567px) {
+		#inforevel {
+			font-size: 10px; 
+			white-space: normal; 
+			margin-bottom: 0; 
+		  }
+		}

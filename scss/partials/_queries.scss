@@ -1,0 +1,95 @@
+/* mediaqueries */
+
+/* titulo */
+
+@media screen and (max-width: 768px) {
+    .contenedor1 h1{
+		margin-top: 10%;
+        font-size: 5rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contenedor1 h1{
+		margin-top: 10%;
+        font-size: 4rem; 
+    }
+}
+
+/* info */
+
+@media screen and (max-width: 768px) {
+    .inforevel h5{
+		margin-top: -80px;
+        font-size: 13px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .inforevel h5{
+		margin-top: -90px;
+        font-size: 13px; 
+    }
+}
+
+/* sobre nosotros titulo */
+
+@media screen and (max-width: 768px) {
+    .contenedor2 h1{
+		margin-top: 10%;
+        font-size: 5rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contenedor2 h1{
+		margin-top: 10%;
+        font-size: 4rem; 
+    }
+}
+
+/* sobne nosotros info */
+
+@media screen and (max-width: 768px) {
+    .sobrenosotros{
+		margin-top: -80px;
+        font-size: 13px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sobrenosotros{
+		margin-top: -90px;
+        font-size: 13px; 
+    }
+}
+
+/* titulo formularios */
+
+@media screen and (max-width: 768px) {
+    .contenedor4 h1{
+		margin-top: 10%;
+        margin-left: 30%;
+        font-size: 5rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contenedor4 h1{
+		margin-top: 10%;
+        margin-left: 30%;
+        font-size: 4rem; 
+    }
+}
+
+/* footer */
+
+@media (max-width: 576px) {
+	.redeslogo img {
+	  width: 30px;
+	}
+  
+	.textopie {
+	  font-size: 12px; 
+	}
+  }

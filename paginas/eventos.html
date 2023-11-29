@@ -7,6 +7,12 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
 
+<!-- animate -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
     <!-- estilo -->
     <link rel="stylesheet" href="../css/estilo.css" />
 
@@ -17,54 +23,56 @@
     <link rel="shortcut icon" href="../images/logorevel.jpg">
     
 </head>
-
-<header id="top">
-
-  <nav class="navegacion">
-    <div class="logorevel">
-        <a href="../index.html">
-            <img src="../images/logorevel.jpg" alt="logo de revel" width="150">
-        </a>
-    </div>
-  
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse dropdown-menu-right" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../paginas/nosotros.html">NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/eventos.html">EVENTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/djs.html">DJS RESIDENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
-</header>
-
 <body>
-
-    <h1 id="titulorevel">EVENTOS PROXIMOS</h1>
-
-<!-- <div class="flyers">
- <img src="../images/pdi.jpg" alt="Flyer Revel en Puerto de Ideas" class="flyer">
- <img src="../images/pert.jpg" alt="Flyer Pert en Revel Producciones" class="flyer">
-</div>
- -->
+    <!-- barra de navegacion -->
+    <header>
+        <div class="navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark"
+               style="background-color: black">
+              <a class="navbar-brand" href="#">
+                <img src="../images/logorevel.jpg"  width="150px" alt="Logo Revel">
+              </a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav11" aria-controls="navbarNav11"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11" >
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/eventos.html">EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/djs.html">DJS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </header>
+    
+      <!-- titulo -->
+      <div class="contenedor1"> 
+        <h1 class="animate__animated animate__flash animate__delay-1s">PROXIMOS<br>EVENTOS</h1>
+              <div class="fondorevel">
+                  <img src="../images/fondorave.gif" alt="Gif Fiesta Techno" width="100%">
+              </div>
+      </div>
 
  <!-- carrusel bootstrap -->
 
- <div class="carruseleventos">
+ <div class="eventos container">
   <div class="row">
       <!-- columna izquierda -->
       <div class="col-md-6">
@@ -110,26 +118,35 @@
   </div>
 </div>
 
+<!-- footer --> 
+
 <footer class="piedepagina">
-  <div class="redes1">
-      <div class="redeslogo">
-          <a href="http://instagram.com/revel.techno"><img src="../images/instagramlogo.png" width="3%"
-                  alt="Instagram"></a>
-      </div>
-      <div class="redeslogo">
-          <a href="http://facebook.com"><img src="../images/facebooklogo.png" width="3%" alt="Facebook"></a>
-      </div>
-      <div class="redeslogo">
-          <a href="http://youtube.com"><img src="../images/youtubelogo.png" width="4%" alt="Youtube"></a>
-      </div>
-
-      <p class="textopie">Todos los derechos son reservados por copyright.</p>
-  </div>
-</footer>
-
+    <div class="redes1">
+        <div class="redeslogo">
+            <a href="http://instagram.com/revel.techno"><img src="../images/instagramlogo.png" width="45px"
+                    alt="Instagram"></a>
+        </div>
+        <div class="redeslogo">
+            <a href="http://facebook.com"><img src="../images/facebooklogo.png" width="45px" alt="Facebook"></a>
+        </div>
+        <div class="redeslogo">
+            <a href="http://youtube.com"><img src="../images/youtubelogo.png" width="65px" alt="Youtube"></a>
+        </div>
+  
+        <p class="textopie">Todos los derechos son reservados por copyright.</p>
+    </div>
+  </footer>
+  
 <!-- bootstrap -->
 <script src="../js/popper.js"></script>
 <script src="../js/bootstrap.js"></script>
+
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 
 </body>
 </html>

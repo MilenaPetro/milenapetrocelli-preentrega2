@@ -1,0 +1,274 @@
+@import "./partials/variables";
+@import "./partials/_reset";
+
+
+@font-face{
+	font-family: Montserrat;
+	src: url(font/Montserrat-Bold.otf);
+
+	font-family: Montserrat-light;
+	src: url(font/Montserrat-Light.otf);
+
+
+}
+
+body{
+    position: relative;
+    background-color: black;
+	font-family: Montserrat Light, Montserrat, Verdana, Tahoma;
+    color: white;
+}
+
+/* barra de nav */
+
+.navegacion{
+	padding-left: 80px;
+	padding-right: 80px;
+	font-family: Montserrat, Verdana, Tahoma;
+}
+		.nav-item{
+			display: inline-block;
+			letter-spacing: 3px;
+			margin-left: 50px;
+			padding: 2px;
+			a:hover{ /* animacion */
+				color: rgb(28, 92, 92);
+				transform: scale(1.02);
+
+			}
+		}
+
+
+.contenedor1{
+	height: $anchoconteiner; 
+    overflow: hidden;
+
+	h1{
+    font-family: $boldfont; /* variable*/
+	margin-top: 5%;
+	margin-left: 8%;
+    position: absolute;
+	color: white;
+	font-size: $h1tamanio; /* variable */
+	text-align: left;
+	line-height: 80%;
+	opacity: 100;
+	}
+
+	.fondorevel{
+		opacity: $opacity; /* variable aca */
+		width: 100%; 
+        height: auto; 
+        display: block; 
+	}
+	}
+
+
+
+/* info principal */
+
+ .inforevel{
+	padding-top: 25px;
+	text-align: left;	
+	letter-spacing: 3px;
+	line-height: 2px;
+	}
+	h5{
+		padding-top: 30px;
+	}
+
+
+/* galeria revel */
+
+.fotos{
+	&:hover{
+		transform: scale(1.04); /* funcionaba pero se perdio con la animacion me parece */
+	}
+}
+
+
+
+/* sobre nosotros */
+
+.contenedor2{
+	position: relative;
+	height: $anchoconteiner; /* variable aca */
+    overflow: hidden;
+
+	h1 {
+	font-family: $boldfont; /* variable*/
+	margin-top: 5%;
+	margin-left: 8%;
+    position: absolute;
+	color: white;
+	font-size: $h1tamanio; /* variable aca */
+	text-align: left;
+	line-height: 80%;
+	opacity: 100;
+	}
+
+	.revel1 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		opacity: $opacity; /* variable */
+	
+		img {
+		  width: 100%;
+		  height: auto;
+		  transform: translate(0%, -30%); /* posicion de la img dentro del contenedor */
+		}
+	  }
+	}
+
+	.contenedor3{
+		position: relative;
+		height: $anchoconteiner; 
+		overflow: hidden;
+
+		.revel3 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			opacity: 20%;
+		
+			img {
+			  width: 100%;
+			  height: auto;
+			  transform: translate(0%, -30%); /* posicion de la img dentro del contenedor */
+			}
+		  }
+		}
+
+.sobrenosotros{
+	padding-top: 25px;
+	text-align: left;	
+	letter-spacing: 2px;
+	line-height: 4px;
+	}
+
+	p{
+	letter-spacing: 3px;
+	line-height: 20px;
+	}
+
+
+
+/* galeria revel */
+
+.galeriarevel{
+padding-top: 5%;
+padding-left: 8%;
+padding-right: 8%;
+}
+
+
+/* eventos */
+.eventos {
+	padding-top: 10%;
+}
+
+.contenedor-tickets {
+  padding-top: 20%;
+   text-align: center; 
+   margin-bottom: 20px;
+   .logocentralticket{
+	width: 300px;
+	display: block; 
+	margin: 0 auto;
+   }
+}
+
+/* djs residents */
+
+	.djs {
+		line-height: 1.5;
+		padding-top: 30px;
+		padding-bottom: 20px;
+
+	.biografia{
+		padding-top: 100px;
+		padding-bottom: 20px;
+		
+  }
+}
+
+.videosdikron{
+	padding-top: 30px;
+	max-width: 1200px; 
+    margin: 0 auto; /* Centra el contenedor */
+	display: flex;
+}
+
+
+/* contacto */
+
+
+.contenedor4{
+	position: relative;
+	height: $anchoconteiner; 
+	overflow: hidden;
+
+	h1 {
+		font-family: $boldfont; /* variable*/
+		margin-top: 5%;
+		margin-left: 50%;
+		position: absolute;
+		color: white;
+		font-size: $h1tamanio; /* variable aca */
+		text-align: right;
+		line-height: 80%;
+		opacity: 100;
+		}
+
+	.fondorevel4 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		opacity: 20%;
+	
+		img {
+		  width: 100%;
+		  height: auto;
+		  transform: translate(0%, -30%); /* posicion de la img dentro del contenedor */
+		}
+	  }
+	}
+
+/* formulario */
+
+.formulario{
+	position: relative;
+	padding-top: 30px;
+
+}
+
+
+
+/* footer */ 
+
+.piedepagina{
+    padding: 40px; 
+    text-align: center; 
+	text-decoration: none; 
+
+	.redeslogo{
+		display: inline;
+		margin: 10px;
+
+		.textopie{
+			font-size: 5px;
+			font-family: Montserrat-light, Verdana;
+			padding: 50px;
+
+		}
+		
+	}
+}
+
+/* mediaqueries */
+
+@import"./partials/queries"
